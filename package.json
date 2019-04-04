@@ -13,8 +13,12 @@
     "url": "git+https://github.com/wang-jun-coder/ts-koa-generator.git"
   },
   "keywords": [
+    "ts-koa-generator",
     "ts",
-    "koa2"
+    "koa",
+    "koa2",
+    "generator",
+    "koa2 generator"
   ],
   "author": "wangjun",
   "license": "MIT",

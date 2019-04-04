@@ -33,8 +33,8 @@ const run = async ()=> {
         .usage('[options] [dir]')
         .option('-p,--pug', 'add pug engine support')
         .option('   --view [engine]', 'add view engine support [ejs, pug]', 'pug')
-        .option('   --css [engine]', 'add view engine support [css, less]', 'css')
-        .option('    --git', 'add .gitignore')
+        .option('   --css [engine]', 'add view engine support [css, less, sass]', 'css')
+        .option('   --git', 'add .gitignore')
         .option('-f, --force', 'force on non-empty directory')
         .parse(process.argv);
 
