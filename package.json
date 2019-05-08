@@ -6,7 +6,7 @@
     "ts-koa": "./bin/ts-koa-generator.js"
   },
   "scripts": {
-    "test": "mocha ./test/cli.test.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",

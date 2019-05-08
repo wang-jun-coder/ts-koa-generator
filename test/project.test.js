@@ -50,7 +50,7 @@ const runScript = async (command, args, options) => {
 
 describe('#test project run', function () {
 
-    describe('#run default', function () {
+    describe('#run default project', function () {
         this.timeout(30000);
 
         before(async () => {
@@ -61,7 +61,7 @@ describe('#test project run', function () {
         });
 
 
-        it('should run', async () => {
+        it('should response expect', async () => {
 
             const projectName = 'test';
             await runScript('../bin/ts-koa-generator.js', [projectName], {cwd:tmpDir});
