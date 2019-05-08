@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && npm run cp-static-files && DEBUG=* node ./dist/bin/www.js",
-    "build": "tsc",
+    "start": "npm run build && DEBUG=* node ./dist/bin/www.js",
+    "build": "tsc && npm run cp-static-files",
     "clean": "rm -rf ./dist/",
     "watch-server": "nodemon --inspect --watch 'src/**/*' -e ts,tsx --exec 'node -r ts-node/register' ./src/bin/www.ts",
     "cp-static-files": "cp -r ./src/public ./dist && cp -r ./src/views ./dist"

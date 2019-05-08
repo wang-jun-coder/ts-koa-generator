@@ -1,7 +1,7 @@
 import Router from 'koa-router';
 const router = new Router();
 
-const index = async (ctx:any, next:Router.IMiddleware) => {
+const index = async (ctx:Router.RouterContext, next:any) => {
     await ctx.render('index', {
         title: 'Welcome to Koa!'
     })
@@ -10,7 +10,7 @@ router.get('/', index);
 router.post('/', index);
 
 
-const json = async (ctx:any, next:Router.IMiddleware) => {
+const json = async (ctx:Router.RouterContext, next:any) => {
     ctx.body = {
         query: ctx.request.query,
         body: ctx.request.body,
@@ -21,11 +21,11 @@ router.get('/json', json);
 router.post('/json', json);
 
 
-const string = async (ctx:any, next:Router.IMiddleware) => {
-    ctx.body = 'welcome to Koa!'
+const string = async (ctx:Router.RouterContext, next:any) => {
+    ctx.body = 'welcome to Koa!';
 };
-router.get('/string', json);
-router.post('/string', json);
+router.get('/string', string);
+router.post('/string', string);
 
 
 export default router;
