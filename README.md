@@ -1,5 +1,5 @@
 # ts-koa-generator
-快速创建 ts 版 koa2 应用的工具
+仿照`koa-generator`的快速创建 ts 版 koa2 简单应用的工具
 
 ### Installation
 ```
