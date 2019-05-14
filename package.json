@@ -6,7 +6,8 @@
     "ts-koa": "./bin/ts-koa-generator.js"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "cov": "nyc npm run test"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,8 @@
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "fs-extra": "^7.0.1",
-    "inquirer": "^6.2.2"
+    "inquirer": "^6.2.2",
+    "nyc": "^14.1.1"
   },
   "devDependencies": {
     "chalk": "^2.4.2",
