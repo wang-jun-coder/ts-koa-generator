@@ -1,4 +1,7 @@
 # ts-koa-generator
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/wang-jun-coder/ts-koa-generator.svg)](https://greenkeeper.io/)
+
 仿照`koa-generator`的快速创建 ts 版 koa2 简单应用的工具
 
 ### Installation
